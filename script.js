@@ -97,3 +97,35 @@ document.querySelectorAll(".faculty-card, .project-card").forEach(el => {
   el.style.transition = "all 0.6s ease";
   observer.observe(el);
 });
+/* ===== FINAL POLISH FEATURES ===== */
+
+/* Loader remove */
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  if (loader) loader.style.display = "none";
+});
+
+/* Back to top button */
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+/* Dark mode toggle */
+const darkToggle = document.getElementById("darkToggle");
+
+darkToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
