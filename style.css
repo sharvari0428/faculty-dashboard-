@@ -204,15 +204,7 @@ body.dark .card {
 .project-card{
     animation:fadeUp 1s ease;
 }
-<section class="skills">
-    <h2>Technologies Used</h2>
-    <div class="badges">
-        <span class="badge">HTML</span>
-        <span class="badge">CSS</span>
-        <span class="badge">JavaScript</span>
-        <span class="badge">Bootstrap</span>
-    </div>
-</section>
+
 .badges{
     display:flex;
     justify-content:center;
@@ -227,6 +219,4 @@ body.dark .card {
     background:#2563eb;
     color:white;
 }
-git add .
-git commit -m "Premium Faculty Dashboard UI"
-git push origin main
+
