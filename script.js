@@ -112,16 +112,17 @@ window.addEventListener("scroll", () => {
   }
 });
 
-topBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+if (topBtn) {
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   });
-});
+}
 
-/* Dark mode toggle */
-const darkToggle = document.getElementById("darkToggle");
-
-darkToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
+if (darkToggle) {
+  darkToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+}
