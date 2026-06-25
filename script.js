@@ -104,6 +104,37 @@ document.querySelectorAll(".faculty-card, .project-card").forEach(el => {
 /* Back to top button */
 const topBtn = document.getElementById("topBtn");
 
+if (topBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
+
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+if (topBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
+
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth
+
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
     topBtn.style.display = "block";
@@ -120,6 +151,7 @@ if (topBtn) {
     });
   });
 }
+/* Dark mode toggle */
 const darkToggle = document.getElementById("darkToggle");
 
 if (darkToggle) {
@@ -127,9 +159,11 @@ if (darkToggle) {
     document.body.classList.toggle("dark");
   });
 }
-}
+
+/* Loader hide */
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   if (loader) {
     loader.style.display = "none";
   }
+});
