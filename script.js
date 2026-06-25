@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.getElementById("loader");
+  if (loader) loader.style.display = "none";
+});
 /* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
