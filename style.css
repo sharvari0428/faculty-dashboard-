@@ -189,3 +189,44 @@ body.dark .card {
 .project-card:hover{
     transform:translateY(-10px);
 }
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero,
+.project-card{
+    animation:fadeUp 1s ease;
+}
+<section class="skills">
+    <h2>Technologies Used</h2>
+    <div class="badges">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Bootstrap</span>
+    </div>
+</section>
+.badges{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.badge{
+    padding:10px 20px;
+    border-radius:30px;
+    background:#2563eb;
+    color:white;
+}
+git add .
+git commit -m "Premium Faculty Dashboard UI"
+git push origin main
