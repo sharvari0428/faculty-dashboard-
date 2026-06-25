@@ -99,11 +99,7 @@ document.querySelectorAll(".faculty-card, .project-card").forEach(el => {
 });
 /* ===== FINAL POLISH FEATURES ===== */
 
-/* Loader remove */
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loader");
-  if (loader) loader.style.display = "none";
-});
+
 
 /* Back to top button */
 const topBtn = document.getElementById("topBtn");
