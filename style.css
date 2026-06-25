@@ -231,3 +231,17 @@ html {
   justify-content: center;
   align-items: center;
 }
+.card, .faculty-card, .project-card {
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.card:hover, .faculty-card:hover, .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+  color: white;
+}
