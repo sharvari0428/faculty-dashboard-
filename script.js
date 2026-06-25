@@ -1,4 +1,4 @@
-/* Smooth scroll */
+/* SMOOTH SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener("click", e => {
     e.preventDefault();
@@ -7,7 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-/* Dark mode */
+/* DARK MODE */
 const darkToggle = document.getElementById("darkToggle");
 if (darkToggle) {
   darkToggle.addEventListener("click", () => {
@@ -15,8 +15,9 @@ if (darkToggle) {
   });
 }
 
-/* Back to top */
+/* BACK TO TOP */
 const topBtn = document.getElementById("topBtn");
+
 if (topBtn) {
   window.addEventListener("scroll", () => {
     topBtn.style.display = window.scrollY > 200 ? "block" : "none";
@@ -27,7 +28,7 @@ if (topBtn) {
   });
 }
 
-/* Loader fix (IMPORTANT) */
+/* LOADER FIX */
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   if (loader) loader.style.display = "none";
