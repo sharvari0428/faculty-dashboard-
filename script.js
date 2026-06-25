@@ -120,9 +120,15 @@ if (topBtn) {
     });
   });
 }
-
+const darkToggle = document.getElementById("darkToggle");
 if (darkToggle) {
   darkToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
   });
 }
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  if (loader) {
+    loader.style.display = "none";
+  }
+});
