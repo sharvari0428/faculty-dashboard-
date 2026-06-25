@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<section class="hero">
-  <div class="hero-content">
-    <h1>Faculty Dashboard</h1>
-    <p>A modern platform for faculty management and academic portfolios.</p>
-    <a href="#projects" class="btn">Explore Dashboard</a>
-  </div>
-</section>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -31,10 +24,19 @@
 </nav>
 
 <!-- Hero -->
-<section class="hero text-white text-center d-flex align-items-center">
-  <div class="container">
-    <h1 class="fw-bold">Welcome to Faculty Dashboard</h1>
-    <p class="lead">Professional Academic Portal for Faculty Profile & Projects</p>
+<section class="hero">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-3">
+      Faculty Dashboard
+    </h1>
+
+    <p class="lead mb-4">
+      Professional Academic Portal for Faculty Profile, Projects & Student Development
+    </p>
+
+    <a href="#projects" class="btn">
+      Explore Projects
+    </a>
   </div>
 </section>
 
@@ -46,12 +48,18 @@
 
     <div class="card shadow-lg p-4 mx-auto faculty-card" style="max-width: 500px;">
 
-      <img src="https://via.placeholder.com/150"
+      <img src="images/bhargavi.jpg"
+     class="rounded-circle mx-auto mb-3 border border-primary"
+     width="150"
+     height="150">
            class="rounded-circle mx-auto mb-3 border border-primary"
            width="130" height="130">
 
-      <h4 class="fw-bold">Bhargavi Upasani</h4>
-      <p class="text-muted">Computer Science Faculty</p>
+      <h4 class="fw-bold mb-1">Bhargavi Upasani</h4>
+<p class="text-primary fw-semibold">
+  Computer Science Faculty • Web Development Mentor
+</p>
+      
 
       <p>
         Passionate educator focused on web development, programming,
@@ -70,7 +78,7 @@
 </section>
 
 <!-- Projects -->
-<section class="py-5 bg-light">
+<section id="projects" class="py-5 bg-light">
   <div class="container">
 
     <h2 class="text-center fw-bold text-primary mb-4">Student Projects</h2>
